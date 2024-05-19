@@ -1,38 +1,97 @@
+body {
+ background-color: #ecf0f4;
+}
 .App {
-  text-align: center;
+  display: flex;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.brand {
+  display: flex;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.brand .container {
+  margin-top: 12px;
+  margin-left: 12px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  background-color: #F9FBFD;
+  margin-left: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border-radius: 14px;
+  height: 95vh;
+  min-height: 700px;
+  color: #373B5C;
+  width: 256px;
+}
+.navbar {
+  margin-left: 18px;
+  color: #1E2875;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar .navstart {
+  margin-left: 18px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar ul {
+  list-style-type: none;
+  font-size: 20px;
+  margin-left: 18px;
+  padding-left: 0;
+}
+.navbar ul li div {
+  width: 128px;
+}
+.navbar ul li {
+  padding-top: 20px;
+  display: flex;
+  cursor: pointer;
+}
+.navbar ul li:hover {
+  font-weight: bold;
+}
+.navbar ul li div {
+  margin-left: 6px;
+}
+.navend {
+  margin-left: 16px;
+  margin-bottom: 16px;
+}
+.pro {
+  background-color: #F2F6FA;
+  align-self: flex-end;
+  margin-bottom: 20px;
+  padding: 8px;
+  border-radius: 14px;
+  margin-right: 1.25em;
+}
+.pro p {
+  color: #A5A7B2;
+}
+.pro h1 {
+  color: #5B5E6F;
+}
+.dot {
+  position: relative;
+  color: #1E2875;
+  height: 5px;
+  width: 5px;
+  background-color: #1E2875;
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-left: 2.5em;
+  margin-right: 0.75em;
+}
+.logout {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 1.5em;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+}
+.logout:hover {
+  background-color: #182376;
+  color: #F2F6FA;
 }
